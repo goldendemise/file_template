@@ -16,11 +16,13 @@ terraform {
 
 }
 
+variable "ROOT_VEGETABLE" {}
 
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
 }
+
 
 data "template_file" "my_json_template" {
   template = file("my-json-file.json")
