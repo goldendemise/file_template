@@ -16,7 +16,7 @@ terraform {
 
 }
 
-variable "ROOT_VEGETABLE" {}
+variable "ROOT_VEGETABLE" {default = "turnip"}
 
 # Configure the AWS Provider
 provider "aws" {
